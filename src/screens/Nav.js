@@ -19,15 +19,15 @@ export const Nav = () => {
       backBehavior="none"
       //shifting={true}
       barStyle={{
-        backgroundColor: theme.DODGER_BLUE,
+        backgroundColor: theme.DEFAULT,
       }}
       // tabBarOptions={{
       //     activeTintColor: '#343148',
       //     inactiveTintColor: 'gray',
       // }}
-      initialRouteName="Inicio">
+      initialRouteName="Home">
       <Tab.Screen
-        name="Entregas"
+        name="Deliveries"
         component={ListDelivery}
         options={{
           tabBarIcon: ({color}) => (
@@ -36,7 +36,7 @@ export const Nav = () => {
         }}
       />
       <Tab.Screen
-        name="Inicio"
+        name="Home"
         component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
@@ -45,7 +45,7 @@ export const Nav = () => {
         }}
       />
       <Tab.Screen
-        name="Configurações"
+        name="Settings"
         component={SettingsScreen}
         options={{
           tabBarIcon: ({color}) => (

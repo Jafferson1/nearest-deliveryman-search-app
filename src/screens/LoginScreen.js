@@ -89,9 +89,9 @@ class LoginScreen extends React.Component {
       emailTouched,
       passwordTouched,
     } = this.state;
-    const emailError = !email && emailTouched ? 'Obrigatório' : undefined;
+    const emailError = !email && emailTouched ? 'Required' : undefined;
     const passwordError =
-      !password && passwordTouched ? 'Obrigatório' : undefined;
+      !password && passwordTouched ? 'Required' : undefined;
     return (
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
@@ -125,8 +125,8 @@ class LoginScreen extends React.Component {
               ref={this.passwordInputRef}
               value={this.state.password}
               onChangeText={this.handlePasswordChange}
-              label={'Senha'}
-              placeholder={'Senha'}
+              label={'Password'}
+              placeholder={'Password'}
               onBlur={this.handlePasswordBlur}
               error={passwordError}
             />

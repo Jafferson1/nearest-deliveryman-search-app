@@ -40,9 +40,9 @@ class FormTextInput extends React.Component {
       <View style={[styles.container, style]}>
         <TextInput
           style={styles.textInput}
-          selectionColor={theme.DODGER_BLUE}
+          selectionColor={theme.DEFAULT}
           underlineColor={
-            isFocused ? theme.DODGER_BLUE : theme.LIGHT_GRAY
+            isFocused ? theme.DEFAULT : theme.GRAY
           }
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
@@ -50,7 +50,7 @@ class FormTextInput extends React.Component {
           ref={this.textInputRef}
           autoCapitalize="none"
           autoCorrect={false}
-          theme={{colors: {primary: theme.DODGER_BLUE, underlineColor: 'transparent'}}}
+          theme={{colors: {primary: theme.DEFAULT, underlineColor: 'transparent'}}}
           {...otherProps}
         />
         <Text style={styles.errorText}>{error || ''}</Text>
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     height: 20,
-    color: theme.TORCH_RED,
+    color: theme.RED,
     ...Platform.select({
       android: {
         paddingLeft: 6,

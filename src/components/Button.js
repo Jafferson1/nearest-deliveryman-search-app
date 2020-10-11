@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.DODGER_BLUE,
+    backgroundColor: theme.DEFAULT,
     marginBottom: 12,
     paddingVertical: 12,
     borderRadius: 4,

@@ -27,7 +27,7 @@ const SettingsScreen = () => {
       />
       <Text>This screen will show the settings</Text>
       <TouchableHighlight style={button} onPress={onExit}>
-        <Text style={text}>Sair</Text>
+        <Text style={text}>Exit</Text>
       </TouchableHighlight>
     </View>
   );
@@ -39,8 +39,9 @@ const styles = StyleSheet.create({
   button: {
     marginVertical: 40,
     marginHorizontal: 10,
-    backgroundColor: theme.DODGER_BLUE,
+    backgroundColor: theme.DEFAULT,
     padding: 15,
+    borderRadius: 100
   },
   text: {
     color: theme.WHITE,
