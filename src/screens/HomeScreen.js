@@ -19,7 +19,7 @@ const HomeScreen = () => {
   const {container, backgroundImg, buttonWinn, buttonPower} = style;
   return (
     <View>
-      <ImageBackground
+      <ImageBackground //You must use google maps API
         source={cityMap}
         style={container}
         imageStyle={backgroundImg}>
